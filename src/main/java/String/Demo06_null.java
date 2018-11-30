@@ -5,6 +5,8 @@ public class Demo06_null {
 //        nullStr();
 
         valueOfStr();
+
+        blank();
     }
 
     public static void valueOfStr() {
@@ -17,5 +19,10 @@ public class Demo06_null {
         String str = null;
         String s = str.toString();
         System.out.println(s);
+    }
+
+    public static void blank() {
+        String ste = " ";
+        System.out.println(ste.length());
     }
 }
