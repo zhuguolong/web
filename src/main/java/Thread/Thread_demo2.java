@@ -18,6 +18,12 @@ public class Thread_demo2 {
                     }
                 }
             }.start();
+
+            new Thread(() -> {
+                for (int j = 0; j < 1000000; j++) {
+                    threadDemo2.incerase();
+                }
+            }).start();
         }
 
         /** 保证前面的线程都执行完 */
