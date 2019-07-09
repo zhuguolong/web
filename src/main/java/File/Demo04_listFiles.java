@@ -9,14 +9,14 @@ import java.io.File;
 public class Demo04_listFiles {
     public static void main(String[] args) {
         File dir = new File("D:\\Develop\\Apache\\apache-maven-3.3.9");
-        showDir(dir);
+        showFile(dir);
     }
 
-    public static void showDir(File dir) {
+    public static void showFile(File dir) {
         File[] files = dir.listFiles();
         for (File file : files) {
             if (file.isDirectory()) {
-                showDir(file);
+                showFile(file);
             } else {
                 System.out.println(file);
             }
